@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FileControls</name>
+    </assembly>
+    <members>
+        <member name="T:de.coe.components.win32api.GetFileInformation">
+            <summary>
+            Kapselung des Zugriffs auf Informationen des Dateisystems mittels der Win32 API für Funktionen, die durch das .NET Framework 2.0 nicht bereitgestellt werden.
+            </summary>
+        </member>
+        <member name="M:de.coe.components.win32api.GetFileInformation.#ctor">
+            <summary>
+            Konstruktor
+            </summary>
+        </member>
+        <member name="M:de.coe.components.win32api.GetFileInformation.GetSmallIcon(System.String)">
+            <summary>
+            Liefert zu einer angegebenen Datei das dazugehörende Smallicon (16*16 Pixel) zurück.
+            </summary>
+            <param name="fileName"></param>
+            <returns>Icon</returns>
+        </member>
+        <member name="M:de.coe.components.win32api.GetFileInformation.GetLargeIcon(System.String)">
+            <summary>
+            Liefert zu einer angegebenen Datei das dazugehörende Largeicon (32*32 Pixel) zurück.
+            </summary>
+            <param name="fileName"></param>
+            <returns>Icon</returns>
+        </member>
+        <member name="M:de.coe.components.win32api.GetFileInformation.GetFileType(System.String)">
+            <summary>
+            Liefert zu einer angegebenen Datei die im Windows registrierte Typenbezeichnung zur Extension zurück
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.Properties.Resources.LicInvalid">
+            <summary>
+              Looks up a localized string similar to Komponente ist nicht lizensiert.
+            </summary>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.ExplorerListView">
+            <summary>
+            <para>Listview im Windows Explorer Style auf Grundlage des Standard Listview Controls.</para>
+            
+            <para>Implementierte Funktionen:</para>
+            <para>-Anzeige der Dateien in einem spezifizierten Ordner mit folgenden Informationen: Dateiname, Dateigröße, Dateityp und letztes Änderungsdatum. Ein Umschalten der Ansicht und das Verschieben der Spalten ist über die Standardfunktionen des Listview Controls möglich.</para>
+            <para>-Sortierung der einzelnen Spalten in der Detailansicht über einen Click auf dem Spaltenkopf.</para>
+            
+            <para>Komponente ist lokalisierungsfähig und für Deutsch und Englisch lokalisiert.</para>
+            </summary>
+            <example>
+            <para>Beispiel zum Auslesen der im ExplorerListView selektierten Dateien:</para>
+            <code>
+            FileInformation soFile = (FileInformation)explorerListView1.SelectedItems[0].Tag;
+            MessageBox.Show (soFile.Name);
+            </code>
+            </example>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.ExplorerListView.ExpFileSorter">
+            <summary>
+            Sortierfunktionen für die Anzeige im ExplorerListView
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerListView.#ctor">
+            <summary>
+            Klassenkonstruktor.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerListView.LicenseKey">
+            <summary>
+            Lizenzschlüssel für diese Komponente.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerListView.ShowFileType">
+            <summary>
+            Blendet die Anzeigespalte für den Dateityp ein, bzw. aus.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerListView.ShowFileDate">
+            <summary>
+            Blendet die Anzeigespalte für das Dateidatum ein, bzw. aus.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerListView.ShowFileSize">
+            <summary>
+            Blendet die Anzeigespalte für die Dateigröße ein, bzw. aus.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerListView.DisplayDirectory(System.String,System.String)">
+            <summary>
+            Anzeige eines über den Parameter übergebenen Verzeichnisses in dem Control.
+            </summary>
+            <param name="FilePath">Kompletter Pfad zu dem anzuzeigenden Ordner</param>
+            <param name="SearchPattern">Suchkriterium für die anzuzeigenden Dateien (z.B. "*.jpg")</param>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerListView.Refresh">
+            <summary>
+            Aktualisiert die Anzeige anhand des zuletzt übergebenen Pfades und Suchkriteriums.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerListView.SetCurrentCulture(System.String)">
+            <summary>
+            Setzt die zur Anzeige verwendete Sprache zur Laufzeit neu.
+            </summary>
+            <param name="Culture">Sprache, die zur Anzeige verwendet werden soll (de oder en).</param>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.ExplorerListView.components">
+            <summary>
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerListView.Dispose(System.Boolean)">
+            <summary> 
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerListView.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung.
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.ExplorerListView.colHFile">
+            <summary>
+            Spalte "Dateiname" des ExplorerListView-Datengrids
+            </summary>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.ExplorerListView.colHSize">
+            <summary>
+            Spalte "Dateigröße" des ExplorerListView-Datengrids
+            </summary>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.ExplorerListView.colHTyp">
+            <summary>
+            Spalte "Dateityp" des ExplorerListView-Datengrids ((z.B. .doc = Microsoft Word Dokument))
+            </summary>        
+        </member>
+        <member name="F:de.coe.controls.filecontrols.ExplorerListView.colHChanged">
+            <summary>
+            Spalte "Geändert Am" des ExplorerListView-Datengrids
+            </summary>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.helpers.ExplorerFileSorter">
+            <summary>
+            Sortierfunktionen für die Anzeige im ExplorerListView
+            </summary>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.Criteria">
+            <summary>
+            Aufzählung der möglichen Sortierkriterien für den ExplorerListView.             
+               ByName => Dateiname
+               ByType => Dateityp
+               BySize => Dateigröße
+               ByLastChange => letztes Änderungsdatum
+            </summary>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.Criteria.ByName">
+            <summary>
+            Sortierung nach dem Dateinamen
+            </summary>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.Criteria.ByType">
+            <summary>
+            Sortierung nach dem Dateityp (z.B. .doc = Microsoft Word Dokument)
+            </summary>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.Criteria.BySize">
+            <summary>
+            Sortierung nach der Dateigröße
+            </summary>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.Criteria.ByLastChange">
+            <summary>
+            Sortierung nach dem Änderungsdatum
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.Ascending">
+            <summary>
+            Liefert/Setzt die Sortierreihenfolgen (aufsteigend = true)
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.SortCriteria">
+            <summary>
+            Liefert/Setzt das Sortierkriterium.
+            Wird nochmals das gleiche Sortierkriterium gesetzt, welches schon gesetzt ist, wird die Sortierreihenfolge umgekehrt.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.ExplorerFileSorter.Compare(System.Object,System.Object)">
+            <summary>
+            Führt den Vergleich zweier ListViewItems anhand der gewählten Sortierkriterien für die Sortierung durch.
+            </summary>
+            <param name="x">1. ListViewItem für den Vergleich</param>
+            <param name="y">2. ListViewItem für den Vergleich</param>
+            <returns></returns>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.helpers.ExplorerColumnHeader">
+            <summary>
+            Erweiterung des Standard ColumnHeader des Listview Controls, um (u.a. im graphischen Designer) eine Zuordnung von Spalten zu Sortierkriterien (ByName, ByType, BySize, ByLastChange) zu schaffen
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.ExplorerColumnHeader.SortCriteria">
+            <summary>
+            Setzt/Liefert die Sortierkriterien (ByName, ByType, BySize, ByLastChange) für eine einzelne Spalte
+            </summary>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.helpers.FileInformation">
+            <summary>
+            Sammlung der Informationen zu einer Datei. 
+            Innerhalb des ExplorerListView hat jeder Eintrag an der Prpperty Tag die spezifische FileInformation und kann von dort wieder ausgelesen werden.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.FileInformation.#ctor(System.String)">
+            <summary>
+            Konstruktor, der durch Übergabe eines Dateinamens die ReadOnly Properties der Klasse füllt.
+            </summary>
+            <param name="Path">Name der Datei zu der die Dateiinformationen gelesen werden sollen</param>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.FileInformation.Dispose">
+            <summary>
+            Dekonstruktor, welcher die geladenen Icon Resourcen zu einer Datei wieder freigibt.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.FileInformation.FileInfo">
+            <summary>
+            FileInfo Objekt der Datei
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.FileInformation.Name">
+            <summary>
+            Name der Datei
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.FileInformation.Filetype">
+            <summary>
+            Dateityp der Datei (z.B. .doc = Microsoft Word Dokument)
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.FileInformation.Size">
+            <summary>
+            Dateigröße der Datei in KB
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.FileInformation.LastChanged">
+            <summary>
+            Letztes Änderungsdatum der Datei
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.FileInformation.LargeIcon">
+            <summary>
+            Largeicon(32*32 Pixel) der Datei
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.FileInformation.SmallIcon">
+            <summary>
+            Largeicon(16*16 Pixel) der Datei
+            </summary>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.helpers.DirectoryNode">
+            <summary>
+            Erweiterung des Standardcontrols TreeNode um Verzeichnisinformationen
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.DirectoryNode.#ctor(de.coe.controls.filecontrols.ExplorerTreeView,System.String)">
+            <summary>
+            Konstruktor für den Rootknoten des Treeviews.
+            </summary>
+            <param name="treeView">TreeView Objekt, an den der Rootknoten erzeugt werden soll.</param>
+            <param name="NodeName">Name des Rootknotens.</param>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.DirectoryNode.#ctor(de.coe.controls.filecontrols.helpers.DirectoryNode,System.IO.DirectoryInfo,System.Int32)">
+            <summary>
+            Konstruktor für die Laufwerksknoten unterhalb des Rootknotens.
+            </summary>
+            <param name="Parent">Vaterknoten, an den der DirectoryNode für ein Laufwerk angehängt werden soll (=Rootknoten).</param>
+            <param name="DirInfo">DirectoryInfo Objekt für das Verzeichnis, für das ein DirectoryNode erzeugt werden soll.</param>
+            <param name="ImgIndex">interner Index für das Laufwerksicon (siehe Anmerkungen).</param>
+            <remarks>
+            <para>Bedeutung des Iconindex für Laufwerke:</para>
+            <para>Home=0</para>
+            <para>Floppylaufwerk=1</para>
+            <para>Festplatte=2</para>
+            <para>Netzlaufwerk=3</para>
+            <para>Wechseldatenträger=4</para>
+            <para>CDRom-Laufwerk=5</para>
+            <para>Verzeichnis=6</para>
+            </remarks>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.DirectoryNode.#ctor(de.coe.controls.filecontrols.ExplorerTreeView,System.IO.DirectoryInfo)">
+            <summary>
+            Konstruktor für einen Verzeichniskoten innerhalb des ExplorerTreeViews. Der Name des Knotens entspricht dem Verzeichnisnamen aus der übergebenen DirInfo.
+            </summary>
+            <param name="treeView">TreeView Objekt, an das ein Verzeichnisknoten angehängt werden soll.</param>
+            <param name="DirInfo">DirectoryInfo Objekt für das Verzeichnis, für das ein DirectoryNode erzeugt werden soll.</param>      
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.DirectoryNode.Loaded">
+            <summary>
+            Überprüfung, ob die Unterknoten bereits geladen wurden, oder ob dies noch ein Dummyknoten ist.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.DirectoryNode.DirInfo">
+            <summary>
+            DirectoryInfo Objekt des aktuellen Knotens
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.DirectoryNode.LoadDirectory">
+            <summary>
+            Lädt die zugehörigen Unterverzeichnisse zu einem Verzeichnisknoten.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.DirectoryNode.LoadFiles">
+            <summary>
+            Lädt die zugehörigen Dateien zu einem Verzeichnisknoten.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.helpers.DirectoryNode.TreeView">
+            <summary>
+            Liefert ein neues ExplorerTreeView Objekt zurück, welches dem ExplorerTreeView Objekt entspricht, aus dem der aktuelle Verzeichnisknoten stammt.
+            </summary>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.helpers.FileNode">
+            <summary>
+            Erweiterung des Standardcontrols TreeNode um Dateiinformationen
+            </summary>
+            <remarks>
+            Klase wird in einer zukünftigen Version evtl. den Namespace wechseln, um ExplorerTreeView.GetIconImageIndex nicht public setzen zu müssen.
+            </remarks>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.FileNode.#ctor(de.coe.controls.filecontrols.helpers.DirectoryNode,System.IO.FileInfo)">
+            <summary>
+            Konstruktor für einen neuen Dateiknoten im ExplorerTreeView. Der Name des Knotens entspricht dem Dateinamen aus der übergebenen FileInfo.
+            </summary>
+            <param name="DirNode">Vaterknoten, an den der Dateiknoten angehängt wird.</param>
+            <param name="FileInfo">FileInfo Objekt der hinzuzufügenden Datei.</param>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.helpers.DummyChildNode">
+            <summary>
+            Erweiterung des Standardcontrols TreeNode. Wird zur Unterscheidung von bereits geladenen Verzeichnis./Dateiknoten von noch nicht Geladenen benötigt.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.helpers.DummyChildNode.#ctor(System.Windows.Forms.TreeNode)">
+            <summary>
+            Konstruktor für Dummyverzeichnisknoten im ExplorerTreeView (siehe Anmerkungen).
+            </summary>
+            <param name="Parent">Vaterknoten, an den der Dummyknoten angehängt wird.</param>
+            <remarks>
+            Dummyknoten werden im Rahmen des Controls benötigt um das Plus (+) Zeichenim TreeView für noch nicht geladenen Unterverzeichnisknoten anzuzeigen. Mit dem ersten aufklappen eines Knotens werden die Dummyknoten durch die richtigen Verzeichnis-/Dateiknoten ersetzt.
+            </remarks>
+        </member>
+        <member name="T:de.coe.controls.filecontrols.ExplorerTreeView">
+            <summary>
+            <para>Treeview im Windows Explorer Style auf Grundlage des Standard Treeview Controls.</para>
+            
+            <para>Implementierte Funktionen:</para>
+            <para>-Anzeige aller (Netz-)Laufwerke auf dem lokalen Rechner</para>
+            <para>-Dynamisches Nachladen von Unterordnern, beim ersten öffnen, bzw. über eine Property ist eine Aktualisierung mit jedem Öffnen eines Knotens möglich.</para>
+            <para>-Benennung des Rootknotens per default mit dem Rechnernamen, aber frei zu ändern.</para>
+            <para>-Ausblendung einzelner Laufwerkstypen.</para>
+            <para>-gezielte Auswahl eines speziellen Verzeichnisses.</para>
+            <para>-Über eine Property kann die Anzeige der Dateien (inkl. der Icons) in einem Verzeichnis ein-, bzw. ausgeschaltet werden.</para>
+            
+            <para>Komponente ist lokalisierungsfähig und für Deutsch und Englisch lokalisiert.</para>
+            </summary>
+            <example>
+            <para>Beispiel zum Auslesen des im ExplorerTreeView selektierten Verzeichnisses:</para>
+            <code>
+            DirectoryNode soNode = (DirectoryNode)explorerTreeView1.SelectedNode;
+            if (soNode.DirInfo != null) //root Knoten enthält keine DirectoryInfo
+                { explorerListView1.DisplayDirectory(soNode.DirInfo.FullName); }
+            </code>
+            </example>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerTreeView.#ctor">
+            <summary>
+            Klassenkonstruktor.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.LicenseKey">
+            <summary>
+            Lizenzschlüssel für diese Komponente.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.ShowFiles">
+            <summary>
+            Liefert/Setzt den Anzeigestatus von Dateien innerhalb des ExplorerTreeView (ShowFiles = true => Anzeige der Dateien innerhalb eines Verzeichnisses).
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.RootNodeName">
+            <summary>
+            Liefert/Setzt den Namen des rootknotens des ExplorerTreeView; Wird ein Leerstring übergeben wird automatisch der Name des lokalen Rechners genommen.
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.HideFloppyDrives">
+            <summary>
+            Liefert/Setzt den Anzeigestatus für Floppylaufwerke (true = keine Anzeige)
+            </summary>
+            <remarks>
+            Floppylaufwerke werden im .NET Framework als Wechsellaufwerke (analog zu z.B. USB Festplatten behandelt). Di eUnterscheidung anch Floppylaufwerken erfolgt in dieser Komponente durch die Laufwerksbuchstaben A und B.
+            </remarks>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.HideHarddiskDrives">
+            <summary>
+            Liefert/Setzt den Anzeigestatus für Festplatten (true = keine Anzeige)
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.HideCDRomDrives">
+            <summary>
+            Liefert/Setzt den Anzeigestatus für CDRom-Laufwerke (true = keine Anzeige)
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.HideNetworkDrives">
+            <summary>
+            Liefert/Setzt den Anzeigestatus für Netzlaufwerke (true = keine Anzeige)
+            </summary>
+        </member>
+        <member name="P:de.coe.controls.filecontrols.ExplorerTreeView.RefreshDirectoryOnExpand">
+            <summary>
+            Liefert/Setzt den Aktualisierungsstatus für ein Verzeichnis beim erneuten Öffnen eines Verzeichnisknotens.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerTreeView.InitTree">
+            <summary>
+            Initialisiert den ExplorerTreeView; Falls dieser vorher schon einmal initialisiert wurde, wird die bisherige Anzeige gelöscht und der Baum mit den aktuellen Eigenschaften neu aufgebaut.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerTreeView.GetIconImageIndex(System.String)">
+            <summary>
+            Liefert den interner Index innerhalb der internen ExplorerTreeView Imagelist zurück. Falls für die Extension der Datei noch kein Icon zu der internen ImageList vorhanden ist, wird dieses hinzugefügt.
+            </summary>
+            <param name="path">kompletter Pfad zu der Datei</param>
+            <returns>Interner Index innerhalb der internen ExplorerTreeView Imagelist.</returns>
+            <remarks>
+            Methode ist nur public, da die Klasse FileNode hierauf zugreifen muß, evtl. wird sich für diese Klasse noch der Namespace ändern, um den Zugriff auf protected/private zu ändern.
+            </remarks>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerTreeView.ExpandDirectory(System.String)">
+            <summary>
+            Anzeige eines spezifischen Verzeichnisses im ExplorerTreeView. Der Knoten des Verzeichnisses wird hierdurch automatishc selektiert.
+            </summary>
+            <param name="Path">Kompletter Pfad zu dem im ExplorerTreeView anzuzeigenden Verzeichnis.</param>
+            <returns>true = Verzeichnis wird angezeigt, false = Verzeichnis nicht im ExplorerTreeView gefunden</returns>
+            <remarks>
+            Während der Baum nach dem angegebenen Verzeichnis sucht, wird die Eigenschaft RefreshOnExpand temporär abgeschaltet und nach Beendigung der Funktion wieder auf seinen vorherigen Wert gesetzt.
+            </remarks>
+        </member>
+        <member name="F:de.coe.controls.filecontrols.ExplorerTreeView.components">
+            <summary>
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerTreeView.Dispose(System.Boolean)">
+            <summary>
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:de.coe.controls.filecontrols.ExplorerTreeView.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+    </members>
+</doc>

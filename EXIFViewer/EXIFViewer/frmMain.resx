@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;oSplitFile.Panel2.Parent" xml:space="preserve">
+    <value>oSplitFile</value>
+  </data>
+  <data name="&gt;&gt;oMenuLanguageEnglish.Name" xml:space="preserve">
+    <value>oMenuLanguageEnglish</value>
+  </data>
+  <data name="&gt;&gt;oMenuLanguageGerman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oTree.Parent" xml:space="preserve">
+    <value>oSplitFile.Panel1</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oMenu.Name" xml:space="preserve">
+    <value>oMenu</value>
+  </data>
+  <data name="&gt;&gt;oFiles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oMenuHelp.Text" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel2.Parent" xml:space="preserve">
+    <value>oSplitLeft</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="oMenuHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oImg.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;oMenuLanguageGerman.Name" xml:space="preserve">
+    <value>oMenuLanguageGerman</value>
+  </data>
+  <data name="&gt;&gt;oMenuHelpAbout.Name" xml:space="preserve">
+    <value>oMenuHelpAbout</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 6</value>
+  </data>
+  <data name="oMenuPathViewDetails.Text" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="oSplitFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 479</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>890, 503</value>
+  </data>
+  <data name="oSplitFile.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;oEXIF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Panel2.Name" xml:space="preserve">
+    <value>oSplitFile.Panel2</value>
+  </data>
+  <data name="oMenuLanguageEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="&gt;&gt;oMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oEXIF.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oTree.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Panel1.Name" xml:space="preserve">
+    <value>oSplitFile.Panel1</value>
+  </data>
+  <data name="oEXIF.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oFiles.Name" xml:space="preserve">
+    <value>oFiles</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel1.Parent" xml:space="preserve">
+    <value>oSplitEXIF</value>
+  </data>
+  <data name="&gt;&gt;oImg.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oSplitLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewSmall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oEXIF.Parent" xml:space="preserve">
+    <value>oSplitEXIF.Panel2</value>
+  </data>
+  <data name="oMenuPathViewSmall.Text" xml:space="preserve">
+    <value>kleine Icons</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oMenuPathViewThumb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="oFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel1.Name" xml:space="preserve">
+    <value>oSplitEXIF.Panel1</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Parent" xml:space="preserve">
+    <value>oSplitLeft.Panel1</value>
+  </data>
+  <data name="oMenuFileEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="&gt;&gt;oTree.Type" xml:space="preserve">
+    <value>de.coe.controls.filecontrols.ExplorerTreeView, FileControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oMenuPathViewList.Text" xml:space="preserve">
+    <value>Liste</value>
+  </data>
+  <data name="&gt;&gt;bgWrkExif.Name" xml:space="preserve">
+    <value>bgWrkExif</value>
+  </data>
+  <data name="oMenuHelpAbout.Text" xml:space="preserve">
+    <value>&amp;über EXIF Viewer</value>
+  </data>
+  <data name="oSplitLeft.SplitterDistance" type="System.Int32, mscorlib">
+    <value>209</value>
+  </data>
+  <data name="&gt;&gt;bgWrkExif.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oSplitEXIF.SplitterDistance" type="System.Int32, mscorlib">
+    <value>469</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel2.Name" xml:space="preserve">
+    <value>oSplitEXIF.Panel2</value>
+  </data>
+  <data name="oEXIF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 479</value>
+  </data>
+  <data name="oMenuLanguageGerman.Text" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewSmall.Name" xml:space="preserve">
+    <value>oMenuPathViewSmall</value>
+  </data>
+  <data name="oImg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oMenuPathView.Text" xml:space="preserve">
+    <value>An&amp;sicht</value>
+  </data>
+  <data name="&gt;&gt;oMenuPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oMenuHelpAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 22</value>
+  </data>
+  <data name="oMenuFileEnd.Text" xml:space="preserve">
+    <value>&amp;Beenden</value>
+  </data>
+  <data name="&gt;&gt;oFiles.Type" xml:space="preserve">
+    <value>de.coe.controls.filecontrols.ExplorerListView, FileControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oMenuLanguageEnglish.Text" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Parent" xml:space="preserve">
+    <value>oSplitLeft.Panel2</value>
+  </data>
+  <data name="oMenuPathViewList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oSplitFile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="oTree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="oEXIF.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel1.Name" xml:space="preserve">
+    <value>oSplitLeft.Panel1</value>
+  </data>
+  <data name="oSplitFile.SplitterDistance" type="System.Int32, mscorlib">
+    <value>247</value>
+  </data>
+  <data name="oEXIF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="oMenuFile.Text" xml:space="preserve">
+    <value>&amp;Datei</value>
+  </data>
+  <data name="oImg.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>EXIF Viewer</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewList.Name" xml:space="preserve">
+    <value>oMenuPathViewList</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathView.Name" xml:space="preserve">
+    <value>oMenuPathView</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oImg.Parent" xml:space="preserve">
+    <value>oSplitEXIF.Panel1</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="oSplitEXIF.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="&gt;&gt;oMenuFileEnd.Name" xml:space="preserve">
+    <value>oMenuFileEnd</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Name" xml:space="preserve">
+    <value>oSplitEXIF</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="oFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oMenuLanguageGerman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="&gt;&gt;oMenuFileEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewThumb.Name" xml:space="preserve">
+    <value>oMenuPathViewThumb</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel2.Parent" xml:space="preserve">
+    <value>oSplitEXIF</value>
+  </data>
+  <data name="oTree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 247</value>
+  </data>
+  <data name="oMenuPathViewThumb.Text" xml:space="preserve">
+    <value>Thumbnails</value>
+  </data>
+  <data name="oTree.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oMenuPathRefresh.Text" xml:space="preserve">
+    <value>&amp;Aktualisieren</value>
+  </data>
+  <data name="&gt;&gt;bgWrkImg.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;oImg.Name" xml:space="preserve">
+    <value>oImg</value>
+  </data>
+  <data name="oMenuPathViewSmall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="oMenuPath.Text" xml:space="preserve">
+    <value>&amp;Verzeichnis</value>
+  </data>
+  <data name="oMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>890, 24</value>
+  </data>
+  <data name="oMenuLanguage.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="oSplitEXIF.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="oMenuLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel2.Name" xml:space="preserve">
+    <value>oSplitLeft.Panel2</value>
+  </data>
+  <data name="&gt;&gt;oMenuFile.Name" xml:space="preserve">
+    <value>oMenuFile</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewDetails.Name" xml:space="preserve">
+    <value>oMenuPathViewDetails</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathRefresh.Name" xml:space="preserve">
+    <value>oMenuPathRefresh</value>
+  </data>
+  <data name="&gt;&gt;oMenuHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oSplitEXIF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>677, 479</value>
+  </data>
+  <data name="&gt;&gt;oMenuPathViewThumb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Panel1.Parent" xml:space="preserve">
+    <value>oSplitFile</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oMenuPath.Name" xml:space="preserve">
+    <value>oMenuPath</value>
+  </data>
+  <data name="oFiles.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;oMenuFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bgWrkImg.Name" xml:space="preserve">
+    <value>bgWrkImg</value>
+  </data>
+  <data name="&gt;&gt;oImg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oMenuFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
+  </data>
+  <data name="oImg.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oMenuPathView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
+  </data>
+  <data name="&gt;&gt;oMenuHelp.Name" xml:space="preserve">
+    <value>oMenuHelp</value>
+  </data>
+  <data name="oSplitLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oTree.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;oFiles.Parent" xml:space="preserve">
+    <value>oSplitFile.Panel2</value>
+  </data>
+  <data name="oTree.SelectedImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oSplitFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="oSplitEXIF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="oImg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;oTree.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oSplitFile.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oMenuLanguageEnglish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Name" xml:space="preserve">
+    <value>oSplitFile</value>
+  </data>
+  <data name="&gt;&gt;oMenuHelpAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAQAEBAQAAEABAAoAQAARgAAABAQAAABAAgAaAUAAG4BAAAgIBAAAQAEAOgCAADWBgAAICAAAAEA
+        CACoCAAAvgkAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAACA
+        AAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAERgA
+        AAAAABGDEYAAAAARiIMRGAAAEYiIgxERgAAYiIiDEREYABiIiIMRERGAGIiIgxEREQAYiIiBERERABiI
+        gBEREREAGIABGZkREREQABGZkRkREQEBEZkRmZkRABERERmZkRAAAQEREZkRAAAAEAERERAAAAABEQER
+        AAD8P///8B///8AP//8AB///AAP//wAB//8AA///AAP//wAD//8AAP//AAD//4AA///AAf//4AP///AH
+        ///4j///KAAAABAAAAAgAAAAAQAIAAAAAABAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAIAAAACA
+        gACAAAAAgACAAICAAADAwMAAwNzAAPDKpgAEBAQACAgIAAwMDAAREREAFhYWABwcHAAiIiIAKSkpAFVV
+        VQBNTU0AQkJCADk5OQCAfP8AUFD/AJMA1gD/7MwAxtbvANbn5wCQqa0AAAAzAAAAZgAAAJkAAADMAAAz
+        AAAAMzMAADNmAAAzmQAAM8wAADP/AABmAAAAZjMAAGZmAABmmQAAZswAAGb/AACZAAAAmTMAAJlmAACZ
+        mQAAmcwAAJn/AADMAAAAzDMAAMxmAADMmQAAzMwAAMz/AAD/ZgAA/5kAAP/MADMAAAAzADMAMwBmADMA
+        mQAzAMwAMwD/ADMzAAAzMzMAMzNmADMzmQAzM8wAMzP/ADNmAAAzZjMAM2ZmADNmmQAzZswAM2b/ADOZ
+        AAAzmTMAM5lmADOZmQAzmcwAM5n/ADPMAAAzzDMAM8xmADPMmQAzzMwAM8z/ADP/MwAz/2YAM/+ZADP/
+        zAAz//8AZgAAAGYAMwBmAGYAZgCZAGYAzABmAP8AZjMAAGYzMwBmM2YAZjOZAGYzzABmM/8AZmYAAGZm
+        MwBmZmYAZmaZAGZmzABmmQAAZpkzAGaZZgBmmZkAZpnMAGaZ/wBmzAAAZswzAGbMmQBmzMwAZsz/AGb/
+        AABm/zMAZv+ZAGb/zADMAP8A/wDMAJmZAACZM5kAmQCZAJkAzACZAAAAmTMzAJkAZgCZM8wAmQD/AJlm
+        AACZZjMAmTNmAJlmmQCZZswAmTP/AJmZMwCZmWYAmZmZAJmZzACZmf8AmcwAAJnMMwBmzGYAmcyZAJnM
+        zACZzP8Amf8AAJn/MwCZzGYAmf+ZAJn/zACZ//8AzAAAAJkAMwDMAGYAzACZAMwAzACZMwAAzDMzAMwz
+        ZgDMM5kAzDPMAMwz/wDMZgAAzGYzAJlmZgDMZpkAzGbMAJlm/wDMmQAAzJkzAMyZZgDMmZkAzJnMAMyZ
+        /wDMzAAAzMwzAMzMZgDMzJkAzMzMAMzM/wDM/wAAzP8zAJn/ZgDM/5kAzP/MAMz//wDMADMA/wBmAP8A
+        mQDMMwAA/zMzAP8zZgD/M5kA/zPMAP8z/wD/ZgAA/2YzAMxmZgD/ZpkA/2bMAMxm/wD/mQAA/5kzAP+Z
+        ZgD/mZkA/5nMAP+Z/wD/zAAA/8wzAP/MZgD/zJkA/8zMAP/M/wD//zMAzP9mAP//mQD//8wAZmb/AGb/
+        ZgBm//8A/2ZmAP9m/wD//2YAIQClAF9fXwB3d3cAhoaGAJaWlgDLy8sAsrKyANfX1wDd3d0A4+PjAOrq
+        6gDx8fEA+Pj4APD7/wCkoKAAgICAAAAA/wAA/wAAAP//AP8AAAD/AP8A//8AAP///wAAAAAAAAAQEBDr
+        AAAAAAAAAAAAABAQdEsQEOsAAAAAAAAAEBB0dHRLIxAQ6wAAAAAQEHR0dHR0SyMjEBDrAAAAEHR0dHR0
+        dEsjIyMQEOsAABB0dHR0dHRLIyMjIxAQ6wAQdHR0dHR0SxAQIyMjEAAAEHR0dHR0dBAQEBAQIxAAABB0
+        dHR0HRAQEBAQEBAQAAAQdHQdHRAQTXV1EBAQEBAQEB0dHRAQ+U11EBBNEBAQEAAQHRAQEPlNEBD5TXV1
+        EBAAABAQEBAQEBD5+U11EBAAAAAAEB0QEBAQEPlNEBAAAAAAAAAQHR0QEBAQEBAAAAAAAAAAABAQEAAQ
+        EBAAAAAA/D////Af///AD///AAf//wAD//8AAf//AAP//wAD//8AA///AAD//wAA//+AAP//wAH//+AD
+        ///wB///+I///ygAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAACA
+        AAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAA
+        ABEIAAAAAAAAAAAAAAAAABGDEIAAAAAAAAAAAAAAABGIgzEIAAAAAAAAAAAAABGIiIMTEIAAAAAAAAAA
+        ABGIiIiDMTEIAAAAAAAAABGIiIiIgxMTEIAAAAAAABGIiIiIiIMxMTEIAAAAAAGIiIiIiIiDExMTEIAA
+        AAABiIiIiIiIgzExMTEIAAAAAYiIiIiIiIMTExMTEIAAAAGIiIiIiIiDMTExMTEIAAABiIiIiIiIgxMT
+        ExMTEIAAAYiIiIiIiIMxMTExMRgAAAGIiIiIiIiDERMTExMQAAABiIiIiIiIcR8RETExEAAAAYiIiIiI
+        dxERERETExAAAAGIiIiIdwEZkRGPEREQAAABiIiIdxARmZlxEREREAAAAYiIdwEBGZmZeZERjxEQAAGI
+        dxAQEZmZmXmRERERERABdwEBARmZmZl5EZmREY8RAXAQEBGZmZmZcRmZmXEREQAXAQERmZmZmRGZmZl5
+        kRAAAXAR8RGZmZEZmZmZeREAAAAXEREREZkRmZmZmXEQAAAAAXARGPERGZmZmZkRAAAAAAAXARERERGZ
+        mZmREAAAAAAAAXAQERjxEZmZEQAAAAAAAAAXAQERERERkRAAAAAAAAAAAXAXcREY8REAAAAAAAAAAAAX
+        cRAAEREQAAAAAAAAAAAAARAAAAARAAAAAAD//D////Af///AD///AAf//AAD//AAAf/AAAD/gAAAf4AA
+        AD+AAAAfgAAAD4AAAAeAAAAPgAAAH4AAAB+AAAAfgAAAH4AAAB+AAAAHgAAAAYAAAACAAAAAwAAAAeAA
+        AAPwAAAH+AAAD/wAAB/+AAA//wAAf/+AAP//wcH//+fz/ygAAAAgAAAAQAAAAAEACAAAAAAAgAQAAAAA
+        AAAAAAAAAAEAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAMDcwADwyqYABAQEAAgI
+        CAAMDAwAERERABYWFgAcHBwAIiIiACkpKQBVVVUATU1NAEJCQgA5OTkAgHz/AFBQ/wCTANYA/+zMAMbW
+        7wDW5+cAkKmtAAAAMwAAAGYAAACZAAAAzAAAMwAAADMzAAAzZgAAM5kAADPMAAAz/wAAZgAAAGYzAABm
+        ZgAAZpkAAGbMAABm/wAAmQAAAJkzAACZZgAAmZkAAJnMAACZ/wAAzAAAAMwzAADMZgAAzJkAAMzMAADM
+        /wAA/2YAAP+ZAAD/zAAzAAAAMwAzADMAZgAzAJkAMwDMADMA/wAzMwAAMzMzADMzZgAzM5kAMzPMADMz
+        /wAzZgAAM2YzADNmZgAzZpkAM2bMADNm/wAzmQAAM5kzADOZZgAzmZkAM5nMADOZ/wAzzAAAM8wzADPM
+        ZgAzzJkAM8zMADPM/wAz/zMAM/9mADP/mQAz/8wAM///AGYAAABmADMAZgBmAGYAmQBmAMwAZgD/AGYz
+        AABmMzMAZjNmAGYzmQBmM8wAZjP/AGZmAABmZjMAZmZmAGZmmQBmZswAZpkAAGaZMwBmmWYAZpmZAGaZ
+        zABmmf8AZswAAGbMMwBmzJkAZszMAGbM/wBm/wAAZv8zAGb/mQBm/8wAzAD/AP8AzACZmQAAmTOZAJkA
+        mQCZAMwAmQAAAJkzMwCZAGYAmTPMAJkA/wCZZgAAmWYzAJkzZgCZZpkAmWbMAJkz/wCZmTMAmZlmAJmZ
+        mQCZmcwAmZn/AJnMAACZzDMAZsxmAJnMmQCZzMwAmcz/AJn/AACZ/zMAmcxmAJn/mQCZ/8wAmf//AMwA
+        AACZADMAzABmAMwAmQDMAMwAmTMAAMwzMwDMM2YAzDOZAMwzzADMM/8AzGYAAMxmMwCZZmYAzGaZAMxm
+        zACZZv8AzJkAAMyZMwDMmWYAzJmZAMyZzADMmf8AzMwAAMzMMwDMzGYAzMyZAMzMzADMzP8AzP8AAMz/
+        MwCZ/2YAzP+ZAMz/zADM//8AzAAzAP8AZgD/AJkAzDMAAP8zMwD/M2YA/zOZAP8zzAD/M/8A/2YAAP9m
+        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
+</value>
+  </data>
+  <data name="oSplitLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>890, 479</value>
+  </data>
+  <data name="&gt;&gt;oSplitFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oSplitLeft.Panel1MinSize" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Name" xml:space="preserve">
+    <value>oSplitLeft</value>
+  </data>
+  <data name="oMenuPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 20</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oMenuPathRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
+  </data>
+  <data name="oMenuPathViewDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="oFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 228</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oTree.Name" xml:space="preserve">
+    <value>oTree</value>
+  </data>
+  <data name="&gt;&gt;oSplitLeft.Panel1.Parent" xml:space="preserve">
+    <value>oSplitLeft</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oImg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 479</value>
+  </data>
+  <data name="oSplitLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="&gt;&gt;oEXIF.Name" xml:space="preserve">
+    <value>oEXIF</value>
+  </data>
+  <data name="&gt;&gt;oSplitEXIF.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oMenuLanguage.Name" xml:space="preserve">
+    <value>oMenuLanguage</value>
+  </data>
+  <data name="&gt;&gt;oMenuLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="bgWrkImg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>211, 2</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>44</value>
+  </metadata>
+  <metadata name="bgWrkExif.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>105, 0</value>
+  </metadata>
+  <metadata name="oMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

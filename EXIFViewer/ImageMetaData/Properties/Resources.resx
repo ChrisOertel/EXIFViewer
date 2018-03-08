@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aperture0" xml:space="preserve">
+    <value>Not defined</value>
+  </data>
+  <data name="Aperture1" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="Aperture2" xml:space="preserve">
+    <value>Normal program</value>
+  </data>
+  <data name="Aperture3" xml:space="preserve">
+    <value>Aperture priority</value>
+  </data>
+  <data name="Aperture4" xml:space="preserve">
+    <value>Shutter priority</value>
+  </data>
+  <data name="Aperture5" xml:space="preserve">
+    <value>Creative program (biased toward depth of field)</value>
+  </data>
+  <data name="Aperture6" xml:space="preserve">
+    <value>Action program (biased toward fast shutter speed)</value>
+  </data>
+  <data name="Aperture7" xml:space="preserve">
+    <value>Portrait mode (for closeup photos with the background out of focus)</value>
+  </data>
+  <data name="Aperture8" xml:space="preserve">
+    <value>Landscape mode (for landscape photos with the background in focus)</value>
+  </data>
+  <data name="ApertureDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="Aperture_Desc" xml:space="preserve">
+    <value>The lens aperture.</value>
+  </data>
+  <data name="Aperture_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Brightness_Desc" xml:space="preserve">
+    <value>The value of brightness.</value>
+  </data>
+  <data name="Brightness_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Category_Camera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="Category_DateTime" xml:space="preserve">
+    <value>Date and Time</value>
+  </data>
+  <data name="Category_EXIF" xml:space="preserve">
+    <value>EXIF</value>
+  </data>
+  <data name="Category_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Category_FileInfo" xml:space="preserve">
+    <value>Related File Information</value>
+  </data>
+  <data name="Category_GPS" xml:space="preserve">
+    <value>GPS</value>
+  </data>
+  <data name="Category_ImageConfiguration" xml:space="preserve">
+    <value>Image Configuration</value>
+  </data>
+  <data name="Category_ImgData" xml:space="preserve">
+    <value>Image Data Characteristics</value>
+  </data>
+  <data name="Category_Other" xml:space="preserve">
+    <value>Other Tags</value>
+  </data>
+  <data name="Category_UserInfo" xml:space="preserve">
+    <value>User information</value>
+  </data>
+  <data name="Category_Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="CfaPattern_Desc" xml:space="preserve">
+    <value>Indicates the color filter array (CFA) geometric pattern of the image sensor.</value>
+  </data>
+  <data name="CfaPattern_Prop" xml:space="preserve">
+    <value>CFA Pattern</value>
+  </data>
+  <data name="ColorSpace_Desc" xml:space="preserve">
+    <value>The color space information.</value>
+  </data>
+  <data name="ColorSpace_Prop" xml:space="preserve">
+    <value>Color space information</value>
+  </data>
+  <data name="ComponentsConfiguration_Desc" xml:space="preserve">
+    <value>Information specific to compressed data.</value>
+  </data>
+  <data name="ComponentsConfiguration_Prop" xml:space="preserve">
+    <value>Components configuration</value>
+  </data>
+  <data name="CompressedBitsPerPixel_Desc" xml:space="preserve">
+    <value>Information specific to compressed data.</value>
+  </data>
+  <data name="CompressedBitsPerPixel_Prop" xml:space="preserve">
+    <value>image compression mode</value>
+  </data>
+  <data name="DateTimeDigitized_Desc" xml:space="preserve">
+    <value>The date and time when the image was stored as digital data. </value>
+  </data>
+  <data name="DateTimeDigitized_Prop" xml:space="preserve">
+    <value>Date digitial data</value>
+  </data>
+  <data name="DateTimeOriginal_Desc" xml:space="preserve">
+    <value>The date and time when the original image data was generated.</value>
+  </data>
+  <data name="DateTimeOriginal_Prop" xml:space="preserve">
+    <value>Date original data</value>
+  </data>
+  <data name="EquipMake_Desc" xml:space="preserve">
+    <value>The manufacturer of the recording equipment.</value>
+  </data>
+  <data name="EquipMake_Prop" xml:space="preserve">
+    <value>Equipment manufacturer</value>
+  </data>
+  <data name="EquipModel_Desc" xml:space="preserve">
+    <value>The model name or model number of the equipment.</value>
+  </data>
+  <data name="EquipModel_Prop" xml:space="preserve">
+    <value>Equipment model</value>
+  </data>
+  <data name="ExifVersion_Desc" xml:space="preserve">
+    <value>The version of this standard supported.</value>
+  </data>
+  <data name="ExifVersion_Prop" xml:space="preserve">
+    <value>Exif version</value>
+  </data>
+  <data name="ExposureBias_Desc" xml:space="preserve">
+    <value>The exposure bias.</value>
+  </data>
+  <data name="ExposureBias_Prop" xml:space="preserve">
+    <value>Exposure Bias</value>
+  </data>
+  <data name="ExposureIndex_Desc" xml:space="preserve">
+    <value>Indicates the exposure index selected on the camera or input device at the time the image is captured.</value>
+  </data>
+  <data name="ExposureIndex_Prop" xml:space="preserve">
+    <value>Exposure index</value>
+  </data>
+  <data name="ExposureProgram_Desc" xml:space="preserve">
+    <value>The class of the program used by the camera to set exposure when the picture is taken.</value>
+  </data>
+  <data name="ExposureProgram_Prop" xml:space="preserve">
+    <value>Exposure program</value>
+  </data>
+  <data name="ExposureTime_Desc" xml:space="preserve">
+    <value>Exposure time, given in seconds (sec).</value>
+  </data>
+  <data name="ExposureTime_Prop" xml:space="preserve">
+    <value>Exposure Time</value>
+  </data>
+  <data name="FileName_Desc" xml:space="preserve">
+    <value>Path and Name of the image.</value>
+  </data>
+  <data name="FileName_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FileSize_Desc" xml:space="preserve">
+    <value>Actual filesize in MB.</value>
+  </data>
+  <data name="FileSize_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FileSource_Desc" xml:space="preserve">
+    <value>Indicates the image source.</value>
+  </data>
+  <data name="FileSource_Prop" xml:space="preserve">
+    <value>File source</value>
+  </data>
+  <data name="FileType_Desc" xml:space="preserve">
+    <value>Type of the image.</value>
+  </data>
+  <data name="FileType_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Flash0" xml:space="preserve">
+    <value>Flash did not fire</value>
+  </data>
+  <data name="Flash1" xml:space="preserve">
+    <value>Flash fired</value>
+  </data>
+  <data name="Flash3" xml:space="preserve">
+    <value>Strobe return light not detected</value>
+  </data>
+  <data name="Flash4" xml:space="preserve">
+    <value>Strobe return light detected</value>
+  </data>
+  <data name="FlashDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="FlashpixVersion_Desc" xml:space="preserve">
+    <value>The Flashpix format version supported by a FPXR file.</value>
+  </data>
+  <data name="FlashpixVersion_Prop" xml:space="preserve">
+    <value>Flashpix version</value>
+  </data>
+  <data name="FNumber_Desc" xml:space="preserve">
+    <value>The F number.</value>
+  </data>
+  <data name="FNumber_Prop" xml:space="preserve">
+    <value>F-Number</value>
+  </data>
+  <data name="FocalLength_Desc" xml:space="preserve">
+    <value>The actual focal length of the lens, in mm.</value>
+  </data>
+  <data name="FocalLength_Prop" xml:space="preserve">
+    <value>Lens focal length</value>
+  </data>
+  <data name="FocalPlaneResolutionUnit_Desc" xml:space="preserve">
+    <value>Indicates the unit for measuring FocalPlaneXResolution and FocalPlaneYResolution.</value>
+  </data>
+  <data name="FocalPlaneResolutionUnit_Prop" xml:space="preserve">
+    <value>Focal plane resolution unit</value>
+  </data>
+  <data name="FocalPlaneXResolution_Desc" xml:space="preserve">
+    <value>Indicates the number of pixels in the image width (X) direction per FocalPlaneResolutionUnit.</value>
+  </data>
+  <data name="FocalPlaneXResolution_Prop" xml:space="preserve">
+    <value>Focal plane X resolution</value>
+  </data>
+  <data name="FocalPlaneYResolution_Desc" xml:space="preserve">
+    <value>Indicates the number of pixels in the image width (Y) direction per FocalPlaneResolutionUnit.</value>
+  </data>
+  <data name="FocalPlaneYResolution_Prop" xml:space="preserve">
+    <value>Focal plane Y resolution</value>
+  </data>
+  <data name="ImageSource3" xml:space="preserve">
+    <value>DSC</value>
+  </data>
+  <data name="ImageSourceDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="ISOSpeed_Desc" xml:space="preserve">
+    <value>Indicates the ISO Speed and ISO Latitude of the camera or input device.</value>
+  </data>
+  <data name="ISOSpeed_Prop" xml:space="preserve">
+    <value>ISO Speed</value>
+  </data>
+  <data name="LightSource0" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="LightSource1" xml:space="preserve">
+    <value>Daylight</value>
+  </data>
+  <data name="LightSource17" xml:space="preserve">
+    <value>Standard light A</value>
+  </data>
+  <data name="LightSource18" xml:space="preserve">
+    <value>Standard light B</value>
+  </data>
+  <data name="LightSource19" xml:space="preserve">
+    <value>Standard light C</value>
+  </data>
+  <data name="LightSource2" xml:space="preserve">
+    <value>Fluorescent</value>
+  </data>
+  <data name="LightSource20" xml:space="preserve">
+    <value>D55</value>
+  </data>
+  <data name="LightSource21" xml:space="preserve">
+    <value>D65</value>
+  </data>
+  <data name="LightSource22" xml:space="preserve">
+    <value>D75</value>
+  </data>
+  <data name="LightSource255" xml:space="preserve">
+    <value>other</value>
+  </data>
+  <data name="LightSource3" xml:space="preserve">
+    <value>Tungsten</value>
+  </data>
+  <data name="LightSourceDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="LightSource_Desc" xml:space="preserve">
+    <value>The kind of light source.</value>
+  </data>
+  <data name="LightSource_Prop" xml:space="preserve">
+    <value>Light source</value>
+  </data>
+  <data name="MakerNote_Desc" xml:space="preserve">
+    <value>A tag for manufacturers of Exif writers to record any desired information. The contents are up to the manufacturer.</value>
+  </data>
+  <data name="MakerNote_Prop" xml:space="preserve">
+    <value>Manufactorer notes</value>
+  </data>
+  <data name="MaxAperture_Desc" xml:space="preserve">
+    <value>The smallest F number of the lens.</value>
+  </data>
+  <data name="MaxAperture_Prop" xml:space="preserve">
+    <value>Maximum lens aperture</value>
+  </data>
+  <data name="MeteringMode0" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="MeteringMode1" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="MeteringMode2" xml:space="preserve">
+    <value>CenterWeightedAverage</value>
+  </data>
+  <data name="MeteringMode255" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="MeteringMode3" xml:space="preserve">
+    <value>Spot</value>
+  </data>
+  <data name="MeteringMode4" xml:space="preserve">
+    <value>MultiSpot</value>
+  </data>
+  <data name="MeteringMode5" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="MeteringMode6" xml:space="preserve">
+    <value>Partial</value>
+  </data>
+  <data name="MeteringModeDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="MeteringMode_Desc" xml:space="preserve">
+    <value>The metering mode.</value>
+  </data>
+  <data name="MeteringMode_Prop" xml:space="preserve">
+    <value>Metering mode</value>
+  </data>
+  <data name="OECF_Desc" xml:space="preserve">
+    <value>Indicates the Opto-Electric Conversion Function.</value>
+  </data>
+  <data name="OECF_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PixelXDimension_Desc" xml:space="preserve">
+    <value>Valid width of the meaningful image.</value>
+  </data>
+  <data name="PixelXDimension_Prop" xml:space="preserve">
+    <value>Valid image width</value>
+  </data>
+  <data name="PixelYDimension_Desc" xml:space="preserve">
+    <value>Valid heigth of the meaningful image.</value>
+  </data>
+  <data name="PixelYDimension_Prop" xml:space="preserve">
+    <value>Valid image height</value>
+  </data>
+  <data name="RelatedSoundFile_Desc" xml:space="preserve">
+    <value>This tag is used to record the name of an audio file related to the image.</value>
+  </data>
+  <data name="RelatedSoundFile_Prop" xml:space="preserve">
+    <value>Related audio file</value>
+  </data>
+  <data name="SceneType1" xml:space="preserve">
+    <value>A directly photographed image</value>
+  </data>
+  <data name="SceneTypeDefault" xml:space="preserve">
+    <value>Not a directly photographed image</value>
+  </data>
+  <data name="SceneType_Desc" xml:space="preserve">
+    <value>Indicates the type of scene.</value>
+  </data>
+  <data name="SceneType_Prop" xml:space="preserve">
+    <value>Scene type</value>
+  </data>
+  <data name="SensingMethod1" xml:space="preserve">
+    <value>Not defined</value>
+  </data>
+  <data name="SensingMethod2" xml:space="preserve">
+    <value>One-chip color area sensor</value>
+  </data>
+  <data name="SensingMethod3" xml:space="preserve">
+    <value>Two-chip color area sensor</value>
+  </data>
+  <data name="SensingMethod4" xml:space="preserve">
+    <value>Three-chip color area sensor</value>
+  </data>
+  <data name="SensingMethod5" xml:space="preserve">
+    <value>Color sequential area sensor</value>
+  </data>
+  <data name="SensingMethod7" xml:space="preserve">
+    <value>Trilinear sensor</value>
+  </data>
+  <data name="SensingMethod8" xml:space="preserve">
+    <value>Color sequential linear sensor</value>
+  </data>
+  <data name="SensingMethodDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="SensingMethod_Desc" xml:space="preserve">
+    <value>Indicates the image sensor type on the camera or input device.</value>
+  </data>
+  <data name="SensingMethod_Prop" xml:space="preserve">
+    <value>Sensing method</value>
+  </data>
+  <data name="ShutterSpeed_Desc" xml:space="preserve">
+    <value>Shutter speed.</value>
+  </data>
+  <data name="ShutterSpeed_Prop" xml:space="preserve">
+    <value>Shutter Speed</value>
+  </data>
+  <data name="Software_Desc" xml:space="preserve">
+    <value>This tag records the name and version of the software or firmware of the camera or image input device used to generate the image. The detailed format is not specified, but it is recommended that the example shown below be followed.</value>
+  </data>
+  <data name="Software_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SpatialFrequencyResponse_Desc" xml:space="preserve">
+    <value>This tag records the camera or input device spatial frequency table.</value>
+  </data>
+  <data name="SpatialFrequencyResponse_Prop" xml:space="preserve">
+    <value>Spatial frequency response</value>
+  </data>
+  <data name="SpectralSensitivity_Desc" xml:space="preserve">
+    <value>Indicates the spectral sensitivity of each channel of the camera used. The tag value is an ASCII string.</value>
+  </data>
+  <data name="SpectralSensitivity_Prop" xml:space="preserve">
+    <value>Spectral sensitivity</value>
+  </data>
+  <data name="SubjectDistance_Desc" xml:space="preserve">
+    <value>The distance to the subject, given in meters.</value>
+  </data>
+  <data name="SubjectDistance_Prop" xml:space="preserve">
+    <value>Subject distance</value>
+  </data>
+  <data name="SubjectLocation_Desc" xml:space="preserve">
+    <value>Indicates the location of the main subject in the scene.</value>
+  </data>
+  <data name="SubjectLocation_Prop" xml:space="preserve">
+    <value>Subject location</value>
+  </data>
+  <data name="UserComment_Desc" xml:space="preserve">
+    <value>A tag for Exif users to write keywords or comments on the image besides those in ImageDescription.</value>
+  </data>
+  <data name="UserComment_Prop" xml:space="preserve">
+    <value>User comments</value>
+  </data>
+  <data name="GpsMapDate_Desc" xml:space="preserve">
+    <value>Indicates the geodetic survey data used by the GPS receiver.</value>
+  </data>
+  <data name="GpsMapDate_Prop" xml:space="preserve">
+    <value>Map date</value>
+  </data>
+  <data name="GpsStatus_Desc" xml:space="preserve">
+    <value>Specifies the status of the GPS receiver when the image is recorded.</value>
+  </data>
+  <data name="GpsStatus_Prop" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="GpsTime_Desc" xml:space="preserve">
+    <value>Time as coordinated universal time (UTC).</value>
+  </data>
+  <data name="GpsTime_Prop" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
+  <data name="GpsVersion_Desc" xml:space="preserve">
+    <value>Version of the Global Positioning Systems (GPS) IFD.</value>
+  </data>
+  <data name="GpsVersion_Prop" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="GpsLatitude_Desc" xml:space="preserve">
+    <value>Indicates the GPS latitude.</value>
+  </data>
+  <data name="GpsLatitude_Prop" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="GpsLongitude_Desc" xml:space="preserve">
+    <value>Indicates the GPS longitude.</value>
+  </data>
+  <data name="GpsLongitude_Prop" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="Contrast_Desc" xml:space="preserve">
+    <value>This tag indicates the direction of contrast processing applied by the camera when the image was shot.</value>
+  </data>
+  <data name="Contrast_Prop" xml:space="preserve">
+    <value>Contrast</value>
+  </data>
+  <data name="CustomRendered_Desc" xml:space="preserve">
+    <value>This tag indicates the use of special processing on image data, such as rendering geared to output. When special
+processing is performed, the reader is expected to disable or minimize any further processing.</value>
+  </data>
+  <data name="CustomRendered_Prop" xml:space="preserve">
+    <value>Custom image processing</value>
+  </data>
+  <data name="DigitalZoomRatio_Desc" xml:space="preserve">
+    <value>This tag indicates the digital zoom ratio when the image was shot. If the numerator of the recorded value is 0, this
+indicates that digital zoom was not used.</value>
+  </data>
+  <data name="DigitalZoomRatio_Prop" xml:space="preserve">
+    <value>Digital zoom ratio</value>
+  </data>
+  <data name="ExposureMode_Desc" xml:space="preserve">
+    <value>This tag indicates the exposure mode set when the image was shot.</value>
+  </data>
+  <data name="ExposureMode_Prop" xml:space="preserve">
+    <value>Exposure mode</value>
+  </data>
+  <data name="FocalLengthIn35mmFilm_Desc" xml:space="preserve">
+    <value>This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal
+length is unknown. Note that this tag differs from the FocalLength tag.</value>
+  </data>
+  <data name="FocalLengthIn35mmFilm_Prop" xml:space="preserve">
+    <value>Focal length in 35 mm film</value>
+  </data>
+  <data name="GainControl_Desc" xml:space="preserve">
+    <value>This tag indicates the degree of overall image gain adjustment.</value>
+  </data>
+  <data name="GainControl_Prop" xml:space="preserve">
+    <value>Gain control</value>
+  </data>
+  <data name="Saturation_Desc" xml:space="preserve">
+    <value>This tag indicates the direction of saturation processing applied by the camera when the image was shot.</value>
+  </data>
+  <data name="Saturation_Prop" xml:space="preserve">
+    <value>Saturation</value>
+  </data>
+  <data name="SceneCaptureType_Desc" xml:space="preserve">
+    <value>This tag indicates the type of scene that was shot. It can also be used to record the mode in which the image was
+shot. Note that this differs from the scene type (SceneType) tag.</value>
+  </data>
+  <data name="SceneCaptureType_Prop" xml:space="preserve">
+    <value>Scene capture type</value>
+  </data>
+  <data name="SubjectArea_Desc" xml:space="preserve">
+    <value>This tag indicates the location and area of the main subject in the overall scene.</value>
+  </data>
+  <data name="SubjectArea_Prop" xml:space="preserve">
+    <value>Subject area</value>
+  </data>
+  <data name="WhiteBalance_Desc" xml:space="preserve">
+    <value>This tag indicates the white balance set when the image was shot.</value>
+  </data>
+  <data name="WhiteBalance_Prop" xml:space="preserve">
+    <value>White balance</value>
+  </data>
+  <data name="Category_Flash" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="Contrast0" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Contrast1" xml:space="preserve">
+    <value>Soft</value>
+  </data>
+  <data name="Contrast2" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="ContrastDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="CustomRendered0" xml:space="preserve">
+    <value>Normal process</value>
+  </data>
+  <data name="CustomRendered1" xml:space="preserve">
+    <value>Custom process</value>
+  </data>
+  <data name="CustomRenderedDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="DeviceSettingDescription_Desc" xml:space="preserve">
+    <value>This tag indicates information on the picture-taking conditions of a particular camera model. The tag is used only to
+indicate the picture-taking conditions in the reader.</value>
+  </data>
+  <data name="DeviceSettingDescription_Prop" xml:space="preserve">
+    <value>Device setting description</value>
+  </data>
+  <data name="ExposureMode0" xml:space="preserve">
+    <value>Auto exposure</value>
+  </data>
+  <data name="ExposureMode1" xml:space="preserve">
+    <value>Manual exposure</value>
+  </data>
+  <data name="ExposureMode2" xml:space="preserve">
+    <value>Auto bracket</value>
+  </data>
+  <data name="ExposureModeDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="GainControl0" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GainControl1" xml:space="preserve">
+    <value>Low gain up</value>
+  </data>
+  <data name="GainControl2" xml:space="preserve">
+    <value>High gain up</value>
+  </data>
+  <data name="GainControl3" xml:space="preserve">
+    <value>Low gain down</value>
+  </data>
+  <data name="GainControl4" xml:space="preserve">
+    <value>High gain down</value>
+  </data>
+  <data name="GainControlDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="Orientation1" xml:space="preserve">
+    <value>top / left side</value>
+  </data>
+  <data name="Orientation2" xml:space="preserve">
+    <value>top / right side</value>
+  </data>
+  <data name="Orientation3" xml:space="preserve">
+    <value>bottom / right side</value>
+  </data>
+  <data name="Orientation4" xml:space="preserve">
+    <value>bottum / left side</value>
+  </data>
+  <data name="Orientation5" xml:space="preserve">
+    <value>left side / top</value>
+  </data>
+  <data name="Orientation6" xml:space="preserve">
+    <value>right side / top</value>
+  </data>
+  <data name="Orientation7" xml:space="preserve">
+    <value>right side / bottum</value>
+  </data>
+  <data name="Orientation8" xml:space="preserve">
+    <value>left side / buttom</value>
+  </data>
+  <data name="OrientationDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="Orientation_Desc" xml:space="preserve">
+    <value>The image orientation.</value>
+  </data>
+  <data name="Orientation_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Saturation0" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Saturation1" xml:space="preserve">
+    <value>Low saturation</value>
+  </data>
+  <data name="Saturation2" xml:space="preserve">
+    <value>High saturation</value>
+  </data>
+  <data name="SaturationDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="SceneCaptureType0" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="SceneCaptureType1" xml:space="preserve">
+    <value>Landscape</value>
+  </data>
+  <data name="SceneCaptureType2" xml:space="preserve">
+    <value>Portrait</value>
+  </data>
+  <data name="SceneCaptureType3" xml:space="preserve">
+    <value>Night scene</value>
+  </data>
+  <data name="SceneCaptureTypeDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="Sharpness0" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Sharpness1" xml:space="preserve">
+    <value>Soft</value>
+  </data>
+  <data name="Sharpness2" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="SharpnessDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="Sharpness_Desc" xml:space="preserve">
+    <value>This tag indicates the direction of sharpness processing applied by the camera when the image was shot.</value>
+  </data>
+  <data name="Sharpness_Prop" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SubjectDistanceRange0" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="SubjectDistanceRange1" xml:space="preserve">
+    <value>Macro</value>
+  </data>
+  <data name="SubjectDistanceRange2" xml:space="preserve">
+    <value>Close view</value>
+  </data>
+  <data name="SubjectDistanceRange3" xml:space="preserve">
+    <value>Distant view</value>
+  </data>
+  <data name="SubjectDistanceRangeDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="SubjectDistanceRange_Desc" xml:space="preserve">
+    <value>This tag indicates the distance to the subject.</value>
+  </data>
+  <data name="SubjectDistanceRange_Prop" xml:space="preserve">
+    <value>Subject distance range</value>
+  </data>
+  <data name="WhiteBalance0" xml:space="preserve">
+    <value>Auto white balance</value>
+  </data>
+  <data name="WhiteBalance1" xml:space="preserve">
+    <value>Manual white balance</value>
+  </data>
+  <data name="WhiteBalanceDefault" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="LightSource10" xml:space="preserve">
+    <value>Cloudy weather</value>
+  </data>
+  <data name="LightSource11" xml:space="preserve">
+    <value>Shade</value>
+  </data>
+  <data name="LightSource12" xml:space="preserve">
+    <value>Daylight fluorescent (D 5700 – 7100K)</value>
+  </data>
+  <data name="LightSource13" xml:space="preserve">
+    <value>Day white fluorescent (N 4600 – 5400K)</value>
+  </data>
+  <data name="LightSource14" xml:space="preserve">
+    <value>Cool white fluorescent (W 3900 – 4500K)</value>
+  </data>
+  <data name="LightSource15" xml:space="preserve">
+    <value>White fluorescent (WW 3200 – 3700K)</value>
+  </data>
+  <data name="LightSource23" xml:space="preserve">
+    <value>D50</value>
+  </data>
+  <data name="LightSource24" xml:space="preserve">
+    <value>ISO studio tungsten</value>
+  </data>
+  <data name="LightSource4" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="LightSource9" xml:space="preserve">
+    <value>Fine weather</value>
+  </data>
+  <data name="ResolutionUnit2" xml:space="preserve">
+    <value>Inch</value>
+  </data>
+  <data name="ResolutionUnit3" xml:space="preserve">
+    <value>Centimeter</value>
+  </data>
+  <data name="ResolutionUnitDefault" xml:space="preserve">
+    <value>no unit</value>
+  </data>
+  <data name="ResolutionUnit_Desc" xml:space="preserve">
+    <value>Unit of measure for the horizontal resolution and the vertical resolution.</value>
+  </data>
+  <data name="ResolutionUnit_Prop" xml:space="preserve">
+    <value>Resolution unit</value>
+  </data>
+  <data name="GpsDate_Desc" xml:space="preserve">
+    <value>GPS date.</value>
+  </data>
+  <data name="GpsDate_Prop" xml:space="preserve">
+    <value>Datestamp</value>
+  </data>
+  <data name="DefaultValue" xml:space="preserve">
+    <value>unkown</value>
+  </data>
+  <data name="Flash10" xml:space="preserve">
+    <value>No flash function</value>
+  </data>
+  <data name="Flash11" xml:space="preserve">
+    <value>No red-eye reduction mode or unknown</value>
+  </data>
+  <data name="Flash12" xml:space="preserve">
+    <value>Red-eye reduction supported</value>
+  </data>
+  <data name="Flash2" xml:space="preserve">
+    <value>No strobe return detection function</value>
+  </data>
+  <data name="Flash5" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="Flash6" xml:space="preserve">
+    <value>Compulsory flash firing</value>
+  </data>
+  <data name="Flash7" xml:space="preserve">
+    <value>Compulsory flash suppression</value>
+  </data>
+  <data name="Flash8" xml:space="preserve">
+    <value>Auto mode</value>
+  </data>
+  <data name="Flash9" xml:space="preserve">
+    <value>Flash function present</value>
+  </data>
+  <data name="FlashFired_Desc" xml:space="preserve">
+    <value>Indicates whether the flash fired.</value>
+  </data>
+  <data name="FlashFired_Prop" xml:space="preserve">
+    <value>Flash fired</value>
+  </data>
+  <data name="FlashFunction_Desc" xml:space="preserve">
+    <value>Indicates the presence of a flash function.</value>
+  </data>
+  <data name="FlashFunction_Prop" xml:space="preserve">
+    <value>Flash function</value>
+  </data>
+  <data name="FlashMode_Desc" xml:space="preserve">
+    <value>Indicates the camera's flash mode.</value>
+  </data>
+  <data name="FlashMode_Prop" xml:space="preserve">
+    <value>Flash mode</value>
+  </data>
+  <data name="FlashRedEye_Desc" xml:space="preserve">
+    <value>Indicates the camera's red-eye mode.</value>
+  </data>
+  <data name="FlashRedEye_Prop" xml:space="preserve">
+    <value>Flash red eye mode</value>
+  </data>
+  <data name="FlashReturn_Desc" xml:space="preserve">
+    <value>Indicates the status of returned light.</value>
+  </data>
+  <data name="FlashReturn_Prop" xml:space="preserve">
+    <value>Flash return</value>
+  </data>
+  <data name="LicInvalid" xml:space="preserve">
+    <value>Component not licensed</value>
+  </data>
+</root>

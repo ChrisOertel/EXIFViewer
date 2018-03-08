@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageMetaData", "ImageMetaData.csproj", "{44421CD2-73EF-45B1-BFBB-679A39B86FAD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ImageMetaData_MSM", "Setup\ImageMetaData_MSM.vdproj", "{7014F72B-4DDA-41CA-81F5-89D4C27ADB70}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ImageMetaData.csproj
+		SccLocalPath0 = .
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Setup\\ImageMetaData_MSM.vdproj
+		SccProjectName2 = \u0022$/Tools/ImageMetaData/Setup\u0022,\u0020TECAAAAA
+		SccLocalPath2 = Setup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44421CD2-73EF-45B1-BFBB-679A39B86FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44421CD2-73EF-45B1-BFBB-679A39B86FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44421CD2-73EF-45B1-BFBB-679A39B86FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44421CD2-73EF-45B1-BFBB-679A39B86FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7014F72B-4DDA-41CA-81F5-89D4C27ADB70}.Debug|Any CPU.ActiveCfg = Debug
+		{7014F72B-4DDA-41CA-81F5-89D4C27ADB70}.Debug|Any CPU.Build.0 = Debug
+		{7014F72B-4DDA-41CA-81F5-89D4C27ADB70}.Release|Any CPU.ActiveCfg = Release
+		{7014F72B-4DDA-41CA-81F5-89D4C27ADB70}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

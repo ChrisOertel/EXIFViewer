@@ -1,0 +1,5 @@
+**/*.pfx
+**/*.rtf
+/.vs/EXIFViewer/v15
+/**/obj/*
+/**/bin/*
